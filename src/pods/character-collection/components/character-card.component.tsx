@@ -31,8 +31,6 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
             <Typography sx={{
               color: 'text.secondary',
               fontSize: 14,
-
-
             }}>
               Mejor frase - "{character.bestSentence}"
             </Typography>

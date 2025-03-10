@@ -1,10 +1,4 @@
-import {
-  CharacterEntityApi,
-  CharactersCollectionData,
-} from './character-collection.api-model';
-// import { mockCharacterCollection } from './character-collection.mock-data';
-
-// let characterCollection = [...mockCharacterCollection];
+import { CharactersCollectionData } from './character-collection.api-model';
 
 const baseUrl = 'http://localhost:3000/api';
 
@@ -18,12 +12,4 @@ export const getCharacterCollection =
     } else {
       throw Error(response.statusText);
     }
-    // devolver coleccion de la API
-    // return characterCollection;
   };
-
-export const deleteCharacter = async (id: string): Promise<boolean> => {
-  // eliminar de la api
-  // characterCollection = characterCollection.filter((h) => h.id !== id);
-  return true;
-};

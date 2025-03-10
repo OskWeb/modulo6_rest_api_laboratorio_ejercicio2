@@ -8,13 +8,12 @@ interface Props {
   characterCollection: CharacterEntityVm[];
   onCreateCharacter: () => void;
   onEdit: (id: string) => void;
-  onDelete: (id: string) => void;
 }
 
 export const CharacterCollectionComponent: React.FunctionComponent<Props> = (
   props
 ) => {
-  const { characterCollection, onCreateCharacter, onEdit, onDelete } = props;
+  const { characterCollection, onCreateCharacter, onEdit } = props;
 
   React.useEffect(() => {
     console.log(characterCollection);
